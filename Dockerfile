@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /vjunos
 
 # Copy image and startup script
-COPY vJunos-router-23.2.R1.15.qcow2 /vjunos/vjunos.qcow2
+COPY vJunos-router-23.2R1.15.qcow2 /vjunos/vjunos.qcow2
 COPY start.sh /vjunos/start.sh
 RUN chmod +x /vjunos/start.sh
 
