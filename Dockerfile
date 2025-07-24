@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /vjunos
 
 # Copy vJunos qcow2 image into container
-COPY vjunos.qcow2 /vjunos/vjunos.qcow2
+COPY vJunos-router-23.2R1.15.qcow2 /vjunos/vjunos.qcow2
 
 # Add start script
 COPY start.sh /vjunos/start.sh
