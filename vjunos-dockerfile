@@ -1,0 +1,24 @@
+# Dockerfile
+FROM ubuntu:22.04
+
+# Install QEMU and dependencies
+RUN apt-get update && apt-get install -y \
+    qemu-kvm \
+    libvirt-clients \
+    iproute2 \
+    iputils-ping \
+    net-tools \
+    socat \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /vjunos
+
+# Copy vJunos qcow2 image into container
+COPY vjunos.qcow2 /vjunos/vjunos.qcow2
+
+# Add start script
+COPY start.sh /vjunos/start.sh
+RUN chmod +x /vjunos/start.sh
+
+ENTRYPOINT ["/vjunos/start.sh"]
