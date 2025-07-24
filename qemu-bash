@@ -1,0 +1,4 @@
+qemu-system-x86_64 -enable-kvm -m 2048 -smp 2 -nographic \
+  -hda vJunos-router-23.2.R1.15.qcow2 \
+  -netdev user,id=net0,hostfwd=tcp::2222-:22 \
+  -device e1000,netdev=net0
