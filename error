@@ -1,0 +1,55 @@
+Wind River Linux 9.0.0.20 qemux86-64 console
+
+qemux86-64 login: cp: cannot stat '/home/pfe/junos/loader.conf': No such file or directory
+mkfs.fat 4.0 (2016-05-06)
+Total number of sectors (32768) not a multiple of sectors per track (63)!
+Add mtools_skip_check=1 to your .mtoolsrc file to skip this test
+image: /home/pfe/junos/metadata-usb.img
+file format: qcow2
+virtual size: 16M (16777216 bytes)
+disk size: 328K
+cluster_size: 65536
+Format specific information:
+    compat: 1.1
+    lazy refcounts: false
+    refcount bits: 16
+    corrupt: false
+INIT: Sending p[   17.017588] br-ext: port 1(eth0) entered disabled state
+851
+[   17.093177] IPv6: ADDRCONF(NETDEV_UP): br-ext: link is not ready
+[   17.103454] IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+[   17.107790] br-ext: port 1(eth0) entered blocking state
+[   17.112330] br-ext: port 1(eth0) entered forwarding state
+[   17.117095] IPv6: ADDRCONF(NETDEV_CHANGE): br-ext: link becomes ready
+Product is VM-vcp_vmx1-161-re-0
+VCPMEM in MB: 2048, VCPCPU: 2
+trace command not available: missing audit-libs devel package at build time.
+[   17.315104] br-ext: port 2(tap0) entered blocking state
+[   17.318482] br-ext: port 2(tap0) entered disabled state
+[   17.323850] device tap0 entered promiscuous mode
+[   17.327229] br-ext: port 2(tap0) entered blocking state
+[   17.330021] br-ext: port 2(tap0) entered forwarding state
+[   17.336812] int: port 1(tap1) entered blocking state
+[   17.341406] int: port 1(tap1) entered disabled state
+[   17.346619] device tap1 entered promiscuous mode
+[   17.351374] int: port 1(tap1) entered blocking state
+[   17.356131] int: port 1(tap1) entered forwarding state
+[   17.387825] kvm: SMP vm created on host with unstable TSC; guest TSC will not be reliable
+qemu-system-x86_64: cannot set up guest memory 'pc.ram': Cannot allocate memory
+[   17.402036] int: port 1(tap1) entered disabled state
+[   17.405290] device tap1 left promiscuous mode
+[   17.407992] int: port 1(tap1) entered disabled state
+[   17.415324] br-ext: port 2(tap0) entered disabled state
+[   17.419941] device tap0 left promiscuous mode
+[   17.423233] br-ext: port 2(tap0) entered disabled state
+nc: can't connect to remote host (127.0.0.1): Connection refused
+nc: can't connect to remote host (127.0.0.1): Connection refused
+
+[   18.079881] br-ext: port 1(eth0) entered disabled state
+nc: can't connect to remote host (127.0.0.1): Connection refused
+nc: can't connect to remote host (127.0.0.1): Connection refused
+mount /dev/hda1 /boot 
+[   19.104192] e1000: eth0 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+[   19.114690] IPv6: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+[   19.122226] br-ext: port 1(eth0) entered blocking state
+[   19.124992] br-ext: port 1(eth0) entered forwarding state
